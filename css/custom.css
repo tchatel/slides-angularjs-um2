@@ -1,0 +1,158 @@
+/* user-defined styles */
+
+div.slide {
+    font-family: Helvetica, Arial, Verdana, sans-serif
+}
+
+.red { color: red; }
+.blue { color: blue; }
+.green { color: green; }
+
+div.slide-content table td {
+    padding: 0.1em 1em 0.1em 1em;
+}
+
+div.slide.back {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1.4em;
+    padding: 0;
+}
+div.slide.back div.slide-content {
+    padding: 0;
+}
+div.slide.back h1 {
+    display: inline-block;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 480px;
+    left: 100px;
+    padding: 0.2em 0.7em 0.2em 0.7em;
+    border-radius: 7px;
+}
+div.slide.back p {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+div.slide.back img {
+    margin: 0;
+    padding: 0;
+    width: 1020px;
+    height: 740px;
+    border-radius: 10px;
+}
+
+.slide.subsection .content {
+    color: #fff;
+    background-color: rgba(0, 40, 50, 0.8);
+    margin: 50px;
+    padding: 6px 10px 3px 10px;
+    border-radius: 10px;
+}
+
+/* -------------- bullets ----------------- */
+.slide.bullets h1 {
+    font-size: 2em;
+    border-bottom: 15px solid thistle;
+    padding-top: 0;
+    margin: 0 0 0.2em 0;
+}
+.slide.bullets ul, .slide.bullets ol {
+    font-size: 1.10em;
+    margin: 0.6em 0 0 1.8em;
+    padding: 0;
+}
+.slide.bullets ol {
+    list-style-type: lower-latin;
+}
+.slide.bullets ul li, .slide.bullets ol li {
+    margin: 0.8em 0 0.8em 0;
+    padding: 0;
+/*    border-top: 3px dotted grey;  */
+
+    list-style-type: none;
+    background: url('img/puce1.png') no-repeat top left;
+    padding-left: 48px;
+}
+
+.slide.bullets ul li:first-child, .slide.bullets ol li:first-child {
+    border-top: none;
+}
+.slide.bullets ul li:before, .slide.bullets ol li:before {
+    background-color: yellow;
+}
+.slide.bullets ul li p, .slide.bullets ol li p {
+    margin: 0.2em 0 0.2em 0;
+}
+.slide.bullets ul li code, .slide.bullets ol li code {
+    font-size: 1.3em;
+}
+
+.slide.bullets ul ul, .slide.bullets ol ul {
+    font-size: 0.80em;
+    margin: 0 0 0.5em 1em;
+    padding: 0;
+    color: #521;
+    border-top: none;
+}
+.slide.bullets ul ul li, .slide.bullets ol ul li {
+    margin: 0.5em 0 0.5em 0;
+    line-height: 1.3em;
+    padding: 0;
+    border-top: none;
+
+    list-style-type: none;
+    background: url('img/puce2.png') no-repeat top left;
+    padding-left: 38px;
+}
+.slide.bullets ul ul li p, .slide.bullets ol ul li p {
+    margin: 0.1em 0 0.1em 0;
+}
+
+.slide.bullets ul li pre, .slide.bullets ol li pre {
+    font-size: 0.95em;
+    margin: 0.8em 0 1.2em 0;
+}
+
+/* speakers */
+.speakers table {
+   width: 100%;
+   padding: 2em 5em;
+   font-size: 0.9em;
+   color: #333;
+}
+.speakers p > img {
+    margin-bottom: 3em;
+}
+
+/* impression */
+@media print {
+    body.all #slides {
+        zoom: 1;
+    }
+    .all .slide + .slide {
+        page-break-before: always;
+    }
+    .all div.slide {
+        border: none;
+        margin: 0;
+        float: none;
+        font-size: 150%;
+    }
+    div.slide div.content > ul > li {
+        list-style: square;
+        line-height: 140%;
+    }
+
+    .slide.bullets ul li, .slide.bullets ol li {
+        margin: 1em 0 1em 0;
+        padding: 0.9em 0 0 0;
+        border-top: 3px solid #ccc;
+    }
+    .slide.bullets ul li:first-child, .slide.bullets ol li:first-child {
+        border-top: none;
+    }
+
+}
