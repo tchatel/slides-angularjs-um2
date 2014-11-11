@@ -118,7 +118,7 @@
 # API d'une directive
 
 * valeurs des attributs de l'élément HTML
-    * texte (contenant éventuellement des expressions etre `{{...}}`)
+    * texte (contenant éventuellement des expressions entre `{{...}}`)
     * expression évaluée comme data binding
     * expression évaluée lors d'une action (ex: clic)
 
