@@ -4,5 +4,5 @@
 
 ### Les exemples présentés :
 
-* application GameStore : [code](https://github.com/tchatel/angular-gamestore-v2/tree/master), [démo](http://tchatel.github.io/angular-gamestore-v2/index.html#/catalog)
+* application GameStore : [code](https://github.com/tchatel/angular-gamestore-um2/tree/master), [démo](http://tchatel.github.io/angular-gamestore-um2/app/index.html#/catalog)
 * directive Google Maps : [code](https://github.com/tchatel/devfest-google-maps), [démo](http://tchatel.github.io/devfest-google-maps/index.html)
